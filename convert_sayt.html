@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartConvert Pro | Professional Desktop Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="app_icon.ico">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .gradient-text { 
+            background: linear-gradient(90deg, #3b82f6, #10b981); 
+            -webkit-background-clip: text; 
+            background-clip: text; /* VS Code'dagi xatolik shuni yozmaganingiz uchun edi */
+            -webkit-text-fill-color: transparent; 
+        }
+        .btn-grad { 
+            background: linear-gradient(90deg, #2563eb, #059669); 
+            transition: 0.5s; 
+            background-size: 200% auto; 
+        }
+        .btn-grad:hover { background-position: right center; transform: scale(1.05); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">SMART CONVERT PRO</div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+                <a href="#features" class="hover:text-blue-400 transition">Xususiyatlar</a>
+                <a href="#preview" class="hover:text-blue-400 transition">Ko'rinish</a>
+                <a href="https://github.com/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center justify-center overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-blue-600/20 blur-[120px] rounded-full -z-10"></div>
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h1 class="text-5xl lg:text-7xl font-extrabold mb-6">
+                Fayllarni <span class="gradient-text">Sekundlarda</span> <br>Konvertatsiya Qiling
+            </h1>
+            <p class="text-gray-400 text-lg lg:text-xl max-w-2xl mx-auto mb-10">
+                SmartConvert Pro — bu professional desktop dastur bo'lib, tasvirlarni sifatini yo'qotmasdan o'zgartiradi.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="SmartConvertPro.exe" download class="btn-grad px-10 py-4 rounded-full font-bold shadow-xl">
+                    <i class="fas fa-download mr-2"></i> Yuklab Olish (Windows)
+                </a>
+                <a href="#features" class="px-10 py-4 rounded-full font-bold border border-gray-600 hover:bg-white/5 transition">
+                    Batafsil ma'lumot
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-gray-500 font-mono">Versiya 2.0.1 | 6 ta til qo'llab-quvvatlanadi</p>
+        </div>
+    </section>
+
+    <div id="preview" class="container mx-auto px-6 -mt-10 mb-20" data-aos="zoom-in">
+        <div class="glass p-2 rounded-2xl shadow-2xl">
+            <div class="bg-slate-800 rounded-xl aspect-video flex items-center justify-center border border-white/5 overflow-hidden">
+                <img src="app_screenshot.png" alt="Dastur ko'rinishi" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="text-gray-500 italic hidden text-center p-10">Dasturingiz Screenshotini 'app_screenshot.png' nomi bilan shu papkaga qo'ying</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="features" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400 text-xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Tezkor Konvertatsiya</h3>
+                    <p class="text-gray-400">Python-ning eng tezkor algoritmlari yordamida fayllarni bir zumda o'zgartiradi.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6 text-green-400 text-xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Maxfiylik Kafolati</h3>
+                    <p class="text-gray-400">Fayllaringiz bulutga yuklanmaydi. Barcha jarayon faqat sizning kompyuteringizda amalga oshadi.</p>
+                </div>
+                <div class="glass p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 text-purple-400 text-xl">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Multilingual</h3>
+                    <p class="text-gray-400">Dastur to'liq 6 ta tilda (UZ, EN, RU, FR, ES) ishlash imkoniyatiga ega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-xl font-bold gradient-text mb-4">SMART CONVERT PRO</div>
+            <p class="text-gray-500 text-sm">&copy; 2026 SmartConvert Team. Hamma huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
